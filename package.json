@@ -1,6 +1,6 @@
 {
   "name": "kewt",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "interfaces for setting, fetching, persisting, and rendering text track styling",
   "repository": "flipactual/kewt",
   "license": "MIT",
@@ -29,6 +29,7 @@
   "dependencies": {
     "jsdom": "^9.5.0",
     "lodash.assign": "^4.2.0",
-    "lodash.defaults": "^4.2.0"
+    "lodash.defaults": "^4.2.0",
+    "lodash.includes": "^4.3.0"
   }
 }

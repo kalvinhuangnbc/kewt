@@ -10,7 +10,7 @@ test('renders ::cue CSS', t => {
   t.plan(5);
   KewtDOM.render();
   const cssRules = document.getElementsByTagName('style')[0].sheet.cssRules[0];
-  t.is(cssRules.style.fontFamily, 'monospace');
+  t.is(cssRules.style.fontFamily, 'Courier');
   t.is(cssRules.style.fontSize, '39px');
   t.is(cssRules.style.color, 'rgba(255,255,255,1)');
   t.is(cssRules.style.backgroundColor, 'rgba(0,0,0,1)');
@@ -46,7 +46,7 @@ test('updates ::cue CSS', t => {
     .set('backgroundOpacity', '100')
     .render();
   const cssRules = document.getElementsByTagName('style')[0].sheet.cssRules[0];
-  t.is(cssRules.style.fontFamily, 'monospace');
+  t.is(cssRules.style.fontFamily, 'Courier');
   t.is(cssRules.style.fontSize, '39px');
   t.is(cssRules.style.color, 'rgba(0,128,128,0)');
   t.is(cssRules.style.backgroundColor, 'rgba(128,0,128,1)');

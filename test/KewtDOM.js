@@ -20,7 +20,7 @@ test('renders ::cue CSS', t => {
 test('renders shadows', t => {
   t.plan(2);
   KewtDOM
-    .set('fontEdge', 'uniform')
+    .set('fontEdge', 'outline')
     .set('edgeOpacity', '75')
     .render();
   const cssRules = document.getElementsByTagName('style')[0].sheet.cssRules[0];

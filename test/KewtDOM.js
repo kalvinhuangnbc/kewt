@@ -1,6 +1,6 @@
 const test = require('ava');
-const { KewtDOM } = require('..');
-const KewtDOMClass = require('../lib/KewtDOM');
+const { KewtDOM } = require('../src');
+const KewtDOMClass = require('../src/KewtDOM');
 
 test.afterEach(() => {
   KewtDOM.reset();

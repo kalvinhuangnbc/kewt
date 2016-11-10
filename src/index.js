@@ -1,5 +1,5 @@
-const Kewt = require('./lib/Kewt');
-const KewtDOM = require('./lib/KewtDOM');
+const Kewt = require('./Kewt');
+const KewtDOM = require('./KewtDOM');
 
 module.exports = {
   Kewt: (() => new Kewt())(),

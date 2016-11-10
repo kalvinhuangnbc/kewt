@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   font: 'monospace',
   fontSize: '3',
@@ -9,5 +7,5 @@ module.exports = {
   textColor: 'white',
   textOpacity: '100',
   backgroundColor: 'black',
-  backgroundOpacity: '100'
+  backgroundOpacity: '100',
 };

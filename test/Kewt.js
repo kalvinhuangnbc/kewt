@@ -1,5 +1,5 @@
 const test = require('ava');
-const { Kewt } = require('..');
+const { Kewt } = require('../src');
 
 test.afterEach(() => {
   Kewt.reset();

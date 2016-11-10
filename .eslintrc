@@ -3,5 +3,6 @@ env:
 extends:
   - airbnb-base
 rules:
+  max-len: [2, 120]
   import/no-extraneous-dependencies: 0
   no-param-reassign: [2, { props: false }]

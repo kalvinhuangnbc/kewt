@@ -1,6 +1,6 @@
 {
   "name": "kewt",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "interfaces for setting, fetching, persisting, and rendering text track styling",
   "repository": "flipactual/kewt",
   "license": "MIT",
@@ -10,8 +10,9 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc ava",
+    "lint": "eslint .",
     "coverage": "nyc report --reporter=html ava && open ./coverage/index.html",
-    "lint": "eslint ."
+    "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "ava": {
     "verbose": true,
@@ -21,15 +22,16 @@
   },
   "devDependencies": {
     "ava": "^0.16.0",
+    "codecov": "^1.0.1",
     "eslint": "^3.4.0",
     "eslint-config-airbnb-base": "^5.0.3",
     "eslint-plugin-import": "^1.14.0",
-    "nyc": "^8.1.0"
+    "jsdom": "^9.5.0",
+    "lodash.defaults": "^4.2.0",
+    "nyc": "^8.4.0"
   },
   "dependencies": {
-    "jsdom": "^9.5.0",
     "lodash.assign": "^4.2.0",
-    "lodash.defaults": "^4.2.0",
     "lodash.includes": "^4.3.0"
   }
 }

@@ -18,20 +18,25 @@ test('renders ::cue CSS', t => {
 });
 
 test('renders shadows', t => {
-  t.plan(2);
+  t.plan(3);
   KewtDOM
-    .set('fontEdge', 'outline')
+    .set('fontEdge', 'uniform')
     .set('edgeOpacity', '75')
     .render();
   const cssRules = document.getElementsByTagName('style')[0].sheet.cssRules[0];
   /* eslint-disable max-len */
-  t.is(cssRules.style.textShadow, '-1px -1px 0 rgba(0,0,0,0.75),1px -1px 0 rgba(0,0,0,0.75),-1px 1px 0 rgba(0,0,0,0.75),1px 1px 0 rgba(0,0,0,0.75)');
+  t.is(cssRules.style.textShadow, '-1px 1px rgba(0,0,0,0.75),0 1px rgba(0,0,0,0.75),1px 1px rgba(0,0,0,0.75),-1px -1px rgba(0,0,0,0.75),0 -1px rgba(0,0,0,0.75),1px -1px rgba(0,0,0,0.75),1px 0 rgba(0,0,0,0.75),-1px 0 rgba(0,0,0,0.75)');
   /* eslint-enable max-len */
   KewtDOM
-  .set('fontEdge', 'shadow')
-  .set('edgeOpacity', '25')
-  .render();
+    .set('fontEdge', 'shadow')
+    .set('edgeOpacity', '25')
+    .render();
   t.is(cssRules.style.textShadow, '1px 1px 1px rgba(0,0,0,0.25)');
+  KewtDOM
+    .set('fontEdge', 'raised')
+    .set('edgeOpacity', '1')
+    .render();
+  t.is(cssRules.style.textShadow, '1px 1px rgba(0,0,0,0.01)');
 });
 
 test('updates ::cue CSS', t => {

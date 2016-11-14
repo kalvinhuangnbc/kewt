@@ -1,4 +1,4 @@
-const includes = require('lodash.includes');
+require('core-js/fn/array/includes');
 
 const KewtStore = {};
 
@@ -7,15 +7,15 @@ Object.defineProperties(KewtStore, {
     value({ property, value }) {
       switch (property) {
         case 'font':
-          return includes(KewtStore.options.fonts, value);
+          return KewtStore.options.fonts.includes(value);
         case 'fontSize':
-          return includes(KewtStore.options.fontSizes, value);
+          return KewtStore.options.fontSizes.includes(value);
         case 'fontEdge':
-          return includes(KewtStore.options.fontEdges, value);
+          return KewtStore.options.fontEdges.includes(value);
         case 'edgeHighlight':
         case 'textColor':
         case 'backgroundColor':
-          return includes(KewtStore.options.colors, value);
+          return KewtStore.options.colors.includes(value);
         case 'edgeOpacity':
         case 'textOpacity':
         case 'backgroundOpacity':

@@ -1,4 +1,4 @@
-const assign = require('lodash.assign');
+require('core-js/fn/object/assign');
 const KewtStore = require('./KewtStore');
 const OPTIONS = require('./OPTIONS');
 const DEFAULTS = require('./DEFAULTS');
@@ -11,9 +11,9 @@ class Kewt {
    * @param  {object} defaults overrides for detault defaults
    */
   constructor(options, defaults) {
-    KewtStore.options = assign({}, OPTIONS, options);
-    KewtStore.defaults = assign({}, DEFAULTS, defaults);
-    KewtStore.active = assign({}, KewtStore.defaults);
+    KewtStore.options = Object.assign({}, OPTIONS, options);
+    KewtStore.defaults = Object.assign({}, DEFAULTS, defaults);
+    KewtStore.active = Object.assign({}, KewtStore.defaults);
   }
   /**
    * reset - resets all caption properties to their default values
@@ -21,7 +21,7 @@ class Kewt {
    * @return {Kewt}
    */
   reset() {
-    assign(KewtStore.active, KewtStore.defaults);
+    Object.assign(KewtStore.active, KewtStore.defaults);
     return this;
   }
   /**

@@ -1,18 +1,24 @@
 {
   "name": "kewt",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "interfaces for setting, fetching, persisting, and rendering text track styling",
   "repository": "flipactual/kewt",
   "license": "MIT",
+  "author": {
+    "name": "Flip",
+    "id": 1306968,
+    "url": "https://github.com/flipactual"
+  },
   "engines": {
     "node": ">=6.0.0"
   },
   "main": "lib/index.js",
   "scripts": {
     "test": "nyc ava",
+    "coverage": "nyc --reporter=html ava && open ./coverage/index.html",
+    "codecov": "nyc --reporter=text-lcov > coverage.lcov && codecov",
     "lint": "eslint .",
-    "coverage": "nyc report --reporter=html ava && open ./coverage/index.html",
-    "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "readme": "emdaer",
     "compile": "babel src -d lib",
     "prepublish": "npm run compile"
   },
@@ -22,21 +28,21 @@
       "./test/helpers/dom"
     ]
   },
+  "dependencies": {
+    "core-js": "^2.4.1"
+  },
   "devDependencies": {
     "ava": "^0.16.0",
     "babel-cli": "^6.18.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-es2016": "^6.16.0",
-    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
     "codecov": "^1.0.1",
+    "emdaer": "^0.3.3",
     "eslint": "^3.4.0",
     "eslint-config-airbnb-base": "^5.0.3",
+    "eslint-plugin-ava": "^4.0.0",
     "eslint-plugin-import": "^1.14.0",
     "jsdom": "^9.5.0",
     "lodash.defaults": "^4.2.0",
-    "nyc": "^8.4.0"
-  },
-  "dependencies": {
-    "core-js": "^2.4.1"
+    "nyc": "^10.0.0"
   }
 }

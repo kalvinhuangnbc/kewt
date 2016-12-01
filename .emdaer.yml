@@ -1,0 +1,26 @@
+- title: true
+- shields:
+    style: 'flat-square'
+    shields:
+      - alt: 'flipactual'
+        image: 'badge/😋-flipactual-218AC7.svg'
+        link: 'https://www.flipactual.com/'
+      - alt: 'Travis'
+        image: 'travis/flipactual/kewt.svg'
+        link: 'https://travis-ci.org/flipactual/kewt/'
+      - alt: 'Codecov'
+        image: 'codecov/c/github/flipactual/kewt.svg'
+        link: 'https://codecov.io/gh/flipactual/kewt/'
+      - alt: 'Node'
+        image: 'node/v/kewt.svg'
+        link: 'http://npmjs.com/package/kewt'
+      - alt: 'NPM'
+        image: 'npm/v/kewt.svg'
+        link: 'http://npmjs.com/package/kewt'
+- text: 'interfaces for setting, fetching, persisting, and rendering text track styling'
+- include: './docs/example.md'
+- include: './docs/settings.md'
+- jsdoc: './src/Kewt.js'
+- jsdoc: './src/KewtDOM.js'
+- include: './docs/scripts.md'
+- license: true

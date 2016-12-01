@@ -1,7 +1,10 @@
 env:
   browser: true
+plugins:
+  - ava
 extends:
   - airbnb-base
+  - plugin:ava/recommended
 rules:
   max-len: [2, 120]
   import/no-extraneous-dependencies: 0

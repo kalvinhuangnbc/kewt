@@ -109,6 +109,46 @@ setProperty - sets a property
 | value | <code>string</code> | the value for the property |
 
 
+<a name="KewtDOM"></a>
+
+## KewtDOM
+**Kind**: global class  
+
+* [KewtDOM](#KewtDOM)
+    * [new KewtDOM(options, defaults)](#new_KewtDOM_new)
+    * [.reset()](#KewtDOM+reset) ⇒ <code>undefined</code>
+    * [.render()](#KewtDOM+render) ⇒ <code>undefined</code>
+    * [.persist()](#KewtDOM+persist) ⇒ <code>undefined</code>
+
+<a name="new_KewtDOM_new"></a>
+
+### new KewtDOM(options, defaults)
+constructor - creates a new text track interface with DOM capabilities
+
+
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>object</code> | overrides for default options |
+| defaults | <code>object</code> | overrides for detault defaults |
+
+<a name="KewtDOM+reset"></a>
+
+### kewtDOM.reset() ⇒ <code>undefined</code>
+reset - resets all caption properties to their default values and clears persisted state
+
+**Kind**: instance method of <code>[KewtDOM](#KewtDOM)</code>  
+<a name="KewtDOM+render"></a>
+
+### kewtDOM.render() ⇒ <code>undefined</code>
+render - renders the style tag with styles to document head
+
+**Kind**: instance method of <code>[KewtDOM](#KewtDOM)</code>  
+<a name="KewtDOM+persist"></a>
+
+### kewtDOM.persist() ⇒ <code>undefined</code>
+persist - persists the current Kewt state to localstorage
+
+**Kind**: instance method of <code>[KewtDOM](#KewtDOM)</code>  
 
 ## Scripts
 

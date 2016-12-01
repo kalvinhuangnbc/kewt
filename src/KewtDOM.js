@@ -14,6 +14,12 @@ class KewtDOM extends Kewt {
         return '';
     }
   }
+  /**
+   * constructor - creates a new text track interface with DOM capabilities
+   *
+   * @param  {object} options  overrides for default options
+   * @param  {object} defaults overrides for detault defaults
+   */
   constructor() {
     super();
     const persistedState = localStorage.getItem('kewtState');

@@ -31,5 +31,6 @@ module.exports = {
     'uniform',
     'raised',
     'shadow',
+    'depressed',
   ],
 };

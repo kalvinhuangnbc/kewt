@@ -18,7 +18,7 @@ test('renders ::cue CSS', t => {
 });
 
 test('renders shadows', t => {
-  t.plan(3);
+  t.plan(4);
   KewtDOM
     .set('fontEdge', 'uniform')
     .set('edgeOpacity', '75')
@@ -37,6 +37,11 @@ test('renders shadows', t => {
     .set('edgeOpacity', '1')
     .render();
   t.is(cssRules.style.textShadow, '1px 1px rgba(0,0,0,0.01)');
+  KewtDOM
+    .set('fontEdge', 'depressed')
+    .set('edgeOpacity', '1')
+    .render();
+  t.is(cssRules.style.textShadow, '-1px -1px rgba(0,0,0,0.01)');
 });
 
 test('updates ::cue CSS', t => {

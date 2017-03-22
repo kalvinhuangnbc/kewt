@@ -10,6 +10,8 @@ class KewtDOM extends Kewt {
         return `1px 1px ${c}`;
       case 'shadow':
         return `1px 1px 1px ${c}`;
+      case 'depressed':
+        return `-1px -1px ${c}`;
       default:
         return '';
     }

@@ -4,7 +4,7 @@
 |---|---|---|
 | `font` | `'monospace'` | `'monospace'`, `'sans-serif'`, `'serif'` |
 | `fontSize` | `'3'` | `'1'`-`'6'` |
-| `fontEdge` | `none` | `'none'`, `'uniform'`, `'raised'`, `'shadow'`|
+| `fontEdge` | `none` | `'none'`, `'uniform'`, `'raised'`, `'shadow'`, `'depressed'`|
 | `edgeHighlight` | `'black'` | `'black'`, `'blue'`, `'green'`, `'teal'`, `'red'`, `'purple'`, `'yellow'`, `'white'` |
 | `edgeOpacity` | `'0'` | `'0'`-`'100'` |
 | `textColor` | `'white'` | `'black'`, `'blue'`, `'green'`, `'teal'`, `'red'`, `'purple'`, `'yellow'`, `'white'` |

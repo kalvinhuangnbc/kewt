@@ -14,7 +14,7 @@ module.exports = {
     max: 100,
   },
   fonts: [
-    'serif',
+    'proportional serif',
     'sans-serif',
     'monospaced serif',
   ],

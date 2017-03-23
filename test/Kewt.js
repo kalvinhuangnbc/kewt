@@ -21,8 +21,8 @@ test('throws and does not set a state value if property is not supported', t => 
 
 test('sets a state value if value is an acceptable state', t => {
   t.plan(1);
-  Kewt.set('font', 'serif');
-  t.is(Kewt.get('font'), 'serif');
+  Kewt.set('font', 'proportional serif');
+  t.is(Kewt.get('font'), 'proportional serif');
 });
 
 test('throws and does not set a state value if value is not an acceptable state', t => {

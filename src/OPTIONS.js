@@ -15,7 +15,7 @@ module.exports = {
   },
   fonts: [
     'proportional serif',
-    'sans-serif',
+    'monospaced sans serif',
     'monospaced serif',
   ],
   fontSizes: [

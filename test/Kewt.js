@@ -89,11 +89,11 @@ test('gets entire store when get is called without parameters', t => {
 test('sets multiple properties at once', t => {
   t.plan(2);
   t.deepEqual(Kewt.set({
-    font: 'sans-serif',
+    font: 'monospaced sans serif',
     fontSize: '3',
     fontEdge: 'shadow',
   }), {
-    font: 'sans-serif',
+    font: 'monospaced sans serif',
     fontSize: '3',
     fontEdge: 'shadow',
     edgeHighlight: 'black',
@@ -104,7 +104,7 @@ test('sets multiple properties at once', t => {
     backgroundOpacity: '100',
   });
   t.deepEqual(Kewt.get(), {
-    font: 'sans-serif',
+    font: 'monospaced sans serif',
     fontSize: '3',
     fontEdge: 'shadow',
     edgeHighlight: 'black',

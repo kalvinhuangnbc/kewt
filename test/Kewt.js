@@ -7,7 +7,7 @@ test.afterEach(() => {
 
 test('instantiates with default values', t => {
   t.plan(1);
-  t.is(Kewt.get('font'), 'monospace');
+  t.is(Kewt.get('font'), 'monospaced serif');
 });
 
 test('throws and does not set a state value if property is not supported', t => {
@@ -35,7 +35,7 @@ test('throws and does not set a state value if value is not an acceptable state'
     () => (Kewt.set('edgeOpacity', '101')),
     '101 is not an accepted value for edgeOpacity'
   );
-  t.is(Kewt.get('font'), 'monospace');
+  t.is(Kewt.get('font'), 'monospaced serif');
   t.is(Kewt.get('edgeOpacity'), '0');
 });
 
@@ -74,7 +74,7 @@ test('sets opacity states', t => {
 test('gets entire store when get is called without parameters', t => {
   t.plan(1);
   t.deepEqual(Kewt.get(), {
-    font: 'monospace',
+    font: 'monospaced serif',
     fontSize: '3',
     fontEdge: 'none',
     edgeHighlight: 'black',

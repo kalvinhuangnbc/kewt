@@ -103,7 +103,7 @@ KewtDOM.RGB_COLORS = {
 KewtDOM.FONTS = {
   serif: 'Times New Roman',
   'sans-serif': 'Helvetica',
-  monospace: 'Courier',
+  'monospaced serif': 'Courier',
 };
 
 KewtDOM.FONT_SIZES = {

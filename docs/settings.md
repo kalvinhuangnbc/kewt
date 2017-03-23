@@ -2,7 +2,7 @@
 
 | Setting | Default | Options |
 |---|---|---|
-| `font` | `'monospace'` | `'monospace'`, `'sans-serif'`, `'serif'` |
+| `font` | `'monospaced serif'` | `'monospaced serif'`, `'sans-serif'`, `'serif'` |
 | `fontSize` | `'3'` | `'1'`-`'6'` |
 | `fontEdge` | `none` | `'none'`, `'uniform'`, `'raised'`, `'shadow'`, `'depressed'`|
 | `edgeHighlight` | `'black'` | `'black'`, `'blue'`, `'green'`, `'teal'`, `'red'`, `'purple'`, `'yellow'`, `'white'` |

@@ -16,7 +16,7 @@ module.exports = {
   fonts: [
     'serif',
     'sans-serif',
-    'monospace',
+    'monospaced serif',
   ],
   fontSizes: [
     '1',

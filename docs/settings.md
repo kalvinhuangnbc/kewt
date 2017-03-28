@@ -11,3 +11,5 @@
 | `textOpacity` | `'100'` | `'0'`-`'100'` |
 | `backgroundColor` | `'black'` | `'black'`, `'blue'`, `'green'`, `'teal'`, `'red'`, `'purple'`, `'yellow'`, `'white'` |
 | `backgroundOpacity` | `'100'` | `'0'`-`'100'` |
+| `windowColor` | `'black'` | `'black'`, `'blue'`, `'green'`, `'teal'`, `'red'`, `'purple'`, `'yellow'`, `'white'` |
+| `windowOpacity` | `'100'` | `'0'`-`'100'` |

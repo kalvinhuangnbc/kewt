@@ -45,7 +45,7 @@ test('renders shadows', t => {
 });
 
 test('updates ::cue CSS', t => {
-  t.plan(4);
+  t.plan(5);
   KewtDOM
     .render()
     .set('edgeHighlight', 'yellow')
@@ -54,12 +54,15 @@ test('updates ::cue CSS', t => {
     .set('edgeOpacity', 50)
     .set('textOpacity', 0)
     .set('backgroundOpacity', '100')
+    .set('windowColor', 'purple')
+    .set('windowOpacity', '100')
     .render();
   const cssRules = document.getElementsByTagName('style')[0].sheet.cssRules[0];
   t.is(cssRules.style.fontFamily, 'Courier');
   t.is(cssRules.style.fontSize, '39px');
   t.is(cssRules.style.color, 'rgba(0,128,128,0)');
   t.is(cssRules.style.backgroundColor, 'rgba(128,0,128,1)');
+  t.is(cssRules.style.windowColor, 'rgba(128,0,128,1)');
 });
 
 test('persists state to localStorage', t => {

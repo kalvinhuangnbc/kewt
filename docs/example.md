@@ -15,6 +15,8 @@ KewtDOM
   .set('textOpacity', 25)
   .set('backgroundColor', 'purple')
   .set('backgroundOpacity', '100')
+  .set('windowColor', 'purple')
+  .set('windowOpacity', '100')
   .persist()
   .render();
 ```

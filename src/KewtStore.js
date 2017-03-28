@@ -20,6 +20,10 @@ Object.defineProperties(KewtStore, {
         case 'textOpacity':
         case 'backgroundOpacity':
           return value >= KewtStore.options.opacityRange.min && value <= KewtStore.options.opacityRange.max;
+        case 'windowColor':
+          return KewtStore.options.colors.includes(value);
+        case 'windowOpacity':
+          return value >= KewtStore.options.opacityRange.min && value <= KewtStore.options.opacityRange.max;
         default:
           throw new Error(`${property} is not a configurable property`);
       }

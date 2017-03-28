@@ -83,6 +83,8 @@ test('gets entire store when get is called without parameters', t => {
     textOpacity: '100',
     backgroundColor: 'black',
     backgroundOpacity: '100',
+    windowColor: 'black',
+    windowOpacity: '100',
   });
 });
 
@@ -102,6 +104,8 @@ test('sets multiple properties at once', t => {
     textOpacity: '100',
     backgroundColor: 'black',
     backgroundOpacity: '100',
+    windowColor: 'black',
+    windowOpacity: '100',
   });
   t.deepEqual(Kewt.get(), {
     font: 'sans-serif',
@@ -113,5 +117,7 @@ test('sets multiple properties at once', t => {
     textOpacity: '100',
     backgroundColor: 'black',
     backgroundOpacity: '100',
+    windowColor: 'black',
+    windowOpacity: '100',
   });
 });

@@ -62,6 +62,8 @@ class KewtDOM extends Kewt {
       textOpacity: fOpacity,
       backgroundColor: bColor,
       backgroundOpacity: bOpacity,
+      windowColor: wColor,
+      windowOpacity: wOpacity,
     } = this.get();
     const {
       FONTS,
@@ -72,6 +74,7 @@ class KewtDOM extends Kewt {
     this.sheet.cssRules[0].style.fontSize = FONT_SIZES[fontSize];
     this.sheet.cssRules[0].style.color = `rgba(${RGB_COLORS[fColor]},${fOpacity / 100})`;
     this.sheet.cssRules[0].style.backgroundColor = `rgba(${RGB_COLORS[bColor]},${bOpacity / 100})`;
+    this.sheet.cssRules[0].style.windowColor = `rgba(${RGB_COLORS[wColor]},${wOpacity / 100})`;
     this.sheet.cssRules[0].style.textShadow = KewtDOM.getShadow(fontEdge, eColor, eOpacity);
     return this;
   }

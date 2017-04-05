@@ -14,9 +14,14 @@ module.exports = {
     max: 100,
   },
   fonts: [
-    'proportional serif',
-    'monospaced sans serif',
-    'monospaced serif',
+    'default',
+    'proportional-serif',
+    'monospaced-sans-serif',
+    'monospaced-serif',
+    'proportional-sans-serif',
+    'casual',
+    'cursive',
+    'small-capitals',
   ],
   fontSizes: [
     '1',

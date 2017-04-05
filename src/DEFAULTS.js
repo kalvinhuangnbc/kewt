@@ -1,5 +1,5 @@
 module.exports = {
-  font: 'monospaced serif',
+  font: 'monospaced-serif',
   fontSize: '3',
   fontEdge: 'none',
   edgeHighlight: 'black',

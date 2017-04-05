@@ -29,6 +29,9 @@ class KewtDOM extends Kewt {
       super.set(JSON.parse(persistedState));
     }
   }
+  setRuleName(ruleName) {
+    this.ruleName = ruleName;
+  }
   /**
    * reset - resets all caption properties to their default values and clears persisted state
    *
@@ -50,7 +53,7 @@ class KewtDOM extends Kewt {
       this.node.appendChild(document.createTextNode(''));
       document.head.appendChild(this.node);
       this.sheet = this.node.sheet;
-      this.sheet.insertRule('::cue {}', 0);
+      this.sheet.insertRule(`${this.ruleName || '::cue'} {}`, 0);
     }
     const {
       font,
